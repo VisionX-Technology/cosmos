@@ -1,0 +1,11 @@
+SCREEN AUTO AUTO 1.0
+<%p Dir.pwd %>
+<%File.readlines("#{Dir.pwd}/../cmd_tlm/states/test.csv").each do |line|%>
+	<% line = line.split(",") %>
+	<% (0..(line[0].to_i)).each do |val |%>
+	VERTICAL
+	  TITLE "<%= target_name %> Instrument ADCS Information" Courier 20 NORMAL true
+
+	END
+	<% end %>
+<% end %>

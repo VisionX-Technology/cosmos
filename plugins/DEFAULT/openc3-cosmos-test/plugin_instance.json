@@ -1,0 +1,17 @@
+{
+  "name": "openc3-cosmos-test-1.1.5.gem__20241125143546",
+  "variables": {
+    "pcdu_target_name": "PCDU"
+  },
+  "plugin_txt_lines": [
+    "# Set VARIABLEs here to allow variation in your plugin",
+    "",
+    "VARIABLE pcdu_target_name PCDU",
+    "",
+    "TARGET PCDU <%= pcdu_target_name %>",
+    "INTERFACE <%= pcdu_target_name %>_INT udp_interface.rb host.docker.internal 1234 1235 1236 nil 128 10.0 nil",
+    ""
+  ],
+  "needs_dependencies": false,
+  "updated_at": 1732545346770951164
+}

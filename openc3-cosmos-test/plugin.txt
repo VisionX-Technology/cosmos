@@ -1,0 +1,7 @@
+# Set VARIABLEs here to allow variation in your plugin
+
+VARIABLE pcdu_target_name PCDU
+
+TARGET PCDU <%= pcdu_target_name %>
+INTERFACE <%= pcdu_target_name %>_INT udp_interface.rb host.docker.internal 1234 1235 1236 nil 128 10.0 nil
+
